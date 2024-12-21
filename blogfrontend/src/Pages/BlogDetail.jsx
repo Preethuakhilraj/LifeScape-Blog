@@ -12,7 +12,7 @@ import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import axiosInstance from "../axiosInterceptor"; // Assuming you're using Axios for API calls
 import CommentsSection from "./CommentSection"; // Import the CommentsSection component
 
-export default function Blogdetail() {
+export default function BlogDetail() {
   const { blogId } = useParams();
   const navigate = useNavigate();
 

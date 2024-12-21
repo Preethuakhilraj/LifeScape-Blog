@@ -6,7 +6,7 @@ import Blogs from './Pages/Blogs';
 import Addblog from './Pages/Addblog';
 import Main from './Pages/Main';
 import Privateroutes from './Pages/Privateroutes'; // Adjust the path as per your folder structure
-import Blogdetail from './Pages/Blogdetail'
+import BlogDetail from './Pages/Blogdetail'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route element={<Privateroutes />}>
           <Route path='/blogs' element={<Main child={<Blogs />} />} />
-          <Route path="/blog/:blogId" element={<Blogdetail/>} />
+          <Route path="/blog/:blogId" element={<BlogDetail/>} />
           <Route path='/addblog' element={<Main child={<Addblog />} />} />
         </Route>
       </Routes>
