@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000', // Replace with your API base URL
+  // baseURL: 'http://localhost:3000',
+  //  // Replace with your API base URL
+  baseURL:'lifescape-server.vercel.app',
 });
 
 // Add a request interceptor to attach the token
