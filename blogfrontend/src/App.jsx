@@ -6,7 +6,8 @@ import Blogs from './Pages/Blogs';
 import Addblog from './Pages/Addblog';
 import Main from './Pages/Main';
 import Privateroutes from './Pages/Privateroutes'; // Adjust the path as per your folder structure
-import Blogdetail from './Pages/Blogdetail'
+import Blogdetail from './Pages/Blogdetail.jsx';
+
 
 function App() {
   return (
