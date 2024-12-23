@@ -9,6 +9,7 @@ import Privateroutes from './Pages/Privateroutes'; // Adjust the path as per you
 import Blogdetail from './Pages/Blogdetail.jsx';
 
 
+
 function App() {
   return (
     <Router>
