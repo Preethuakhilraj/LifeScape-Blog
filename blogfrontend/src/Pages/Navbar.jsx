@@ -81,7 +81,7 @@ const Navbar = () => {
             borderRadius: '20px',
             backgroundColor: '#ffffff20',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-            gap: '12px',
+            gap: '1rem',
             cursor: 'pointer',
             flexDirection: isSmallScreen ? 'column' : 'row', // Stack on small screens
           }}
