@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // CORS setup
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://life-scape-blog-41declient.vercel.app/', credentials: true }));
 
 // Static files
 app.use('/public', express.static(path.join(__dirname, 'public')));
