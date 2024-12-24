@@ -17,12 +17,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // CORS setup
-app.use(cors({ origin: 'https://life-scape-blog-41declient.vercel.app/', credentials: true }));
+app.use(cors({ origin: 'http://localhost:5173' }));
 
 // Static files
 app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use(express.json()); // Parse JSON bodies
-app.use(express.urlencoded({ extended: true }));
+
 // API routes
 app.use('/api', postroute);
 app.use('/user', userroute);
@@ -30,7 +29,6 @@ app.use('/user', userroute);
 app.listen(port, (err) => {
   if (err) {
     console.error(`Failed to start server: ${err.message}`);
-    process.exit(1);
-  }
+     }
   console.log(`Server is listening on Port ${port}`);
 });
