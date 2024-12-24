@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   //  baseURL: 'http://localhost:3000',
-  baseURL:'https://lifescape-server-xw0brfa4p-preethus-projects.vercel.app/'
+  baseURL:'https://life-scape-blogserver.vercel.app'
 });
 
 // Add a request interceptor to attach the token
